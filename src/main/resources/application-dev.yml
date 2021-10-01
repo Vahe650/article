@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/post-article?createDatabaseIfNotExist=true&useSSL=false&useUnicode=true&serverTimezone=UTC
+    password: root
+    username: postgres
+
+# flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    locations: classpath:db/migration
+    sql-migration-prefix: v
+    sql-migration-separator: .
+
+
+
+
+jwt:
+  secret: QWERtyuyui
+  expiration: 6000000
+  header: Authorization
+  spring:
