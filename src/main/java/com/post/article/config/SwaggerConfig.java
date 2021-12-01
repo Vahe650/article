@@ -21,7 +21,6 @@ public class SwaggerConfig {
 
 
     public static final String AUTHORIZATION_HEADER = "Authorization";
-
     private ApiInfo apiInfo() {
         return new ApiInfo("Post-Article",
                 "For getting access to admin's endpoind,you need to authorize as admin. username:admin , password:admin",
